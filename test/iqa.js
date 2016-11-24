@@ -188,7 +188,10 @@ function get_application_status(url) {
 
 function send_sms(status) {
     var msg = '';
-    msg += targetApplicantId + '-' + targetApplicationId + ', current status: ' + status + '【' + argv.sign + '】';
+    var date = new Date();
+    msg += targetApplicantId + '-' + targetApplicationId + ', status: ' + status;
+    msg += ', date: ' + date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
+    msg += '【' + argv.sign + '】';
     console.log(msg.white.inverse);
 
     phones.forEach(function(phone) {
