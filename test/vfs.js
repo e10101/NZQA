@@ -91,7 +91,7 @@ function check_status(num, birth) {
 function send_sms(status) {
     var msg = '';
     var date = new Date();
-    msg += status + ', ' + number + '-' + birth;
+    msg += status + ', ' + number + ', ' + birth;
     msg += ', date: ' + date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
     msg += '【' + argv.sign + '】';
     console.log(msg.white.inverse);
