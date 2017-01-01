@@ -37,7 +37,7 @@ var phones = [];
 function check_status(num, birth) {
     request(main_url, function (err, response, body) {
         if (err) {
-            console.log(err, response.statusCode);
+            console.log(err);
             return;
         }
         var $ = cheerio.load(body);
