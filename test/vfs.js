@@ -111,4 +111,7 @@ function init_sms() {
 
 init_sms();
 
+console.log('number', number);
+console.log('birth', birth);
+
 check_status(number, birth);
