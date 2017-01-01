@@ -37,6 +37,8 @@ var phones = [];
 function check_status(num, birth) {
     request(main_url, function (err, response, body) {
         if (err) {
+            console.log(err, response.statusCode);
+            return;
         }
         var $ = cheerio.load(body);
         var viewstate = $('#__VIEWSTATE').val();
@@ -69,6 +71,7 @@ function check_status(num, birth) {
 
             if (err) {
                 console.log(err, response.statusCode);
+                return;
             }
             var $ = cheerio.load(body);
             var text = $('.fnstatus font').text();
