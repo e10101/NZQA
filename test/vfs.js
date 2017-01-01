@@ -23,9 +23,10 @@ var argv = require('optimist')
 
 request = request.defaults({
     jar: true,
-    headers: {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
-    }
+    // headers: {
+    //     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
+    // },
+    // secureProtocol: 'SSLv3_method'
 });
 
 var main_url = 'https://www.visaservices.co.in/NewZealand-China-Tracking/TrackingParam.aspx?P=51HHvkv1thMznsrS3VG2Cw==';
