@@ -1,6 +1,6 @@
 // AUTHOR: Yishi Guo
 // DATE: 22/11/2016
-// A Progress Checker for NZQA IQA.
+// A checker for VFS Global visa process.
 
 var request = require('request');
 var cheerio = require('cheerio');
