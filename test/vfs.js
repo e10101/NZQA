@@ -1,5 +1,5 @@
 // AUTHOR: Yishi Guo
-// DATE: 22/11/2016
+// DATE: 01/01/2016
 // A checker for VFS Global visa process.
 
 var request = require('request');
